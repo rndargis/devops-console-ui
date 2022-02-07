@@ -32,7 +32,7 @@ wasmOauth2 {
     QMAKE_LFLAGS += -s ASYNCIFY=1
     QMAKE_LFLAGS += -s 'ASYNCIFY_IMPORTS=["getUser"]'
     QMAKE_LFLAGS += -s EXPORTED_FUNCTIONS="['_main','_get_config','_set_token']"
-    QMAKE_LFLAGS += -g2
+    QMAKE_LFLAGS_DEBUG += -g2
     QMAKE_LFLAGS += -s SAFE_HEAP=1
     QMAKE_LFLAGS += -s ERROR_ON_UNDEFINED_SYMBOLS=0
 
@@ -40,7 +40,7 @@ wasmOauth2 {
     QMAKE_CXXFLAGS += -s ASYNCIFY=1
     QMAKE_CXXFLAGS += -s 'ASYNCIFY_IMPORTS=["getUser"]'
     QMAKE_CXXFLAGS += -s EXPORTED_FUNCTIONS="['_main','_get_config','_set_token']"
-    QMAKE_CXXFLAGS += -g2
+    QMAKE_CXXFLAGS_DEBUG += -g2
     QMAKE_CXXFLAGS += -s SAFE_HEAP=1
     QMAKE_CXXFLAGS += -s ERROR_ON_UNDEFINED_SYMBOLS=0
 }
